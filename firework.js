@@ -28,7 +28,7 @@ function Firework() {
         if (!this.exploded) {
             this.particle.show();
         }
-        for (var i = 0; i < 100; i++) {
+        for (var i = 0; i < this.fragments.length; i++) {
             this.fragments[i].show;
         }
     }
