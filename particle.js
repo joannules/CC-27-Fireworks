@@ -15,6 +15,6 @@ function Particle (x,y) {
   }
 
   this.show = function(){
-    point(this.position.x,this.position.y);
+    point(this.pos.x,this.pos.y);
   }
 }
