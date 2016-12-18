@@ -1,5 +1,5 @@
 
-funtion Particle (x,y) {
+function Particle (x,y) {
   this.pos = createVector(x,y);
   this.vel = createVector(0,0);
   this.acc = createVector(0,0);
