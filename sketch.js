@@ -1,4 +1,4 @@
-var firework;
+var fireworks  = [];
 var gravity;
 
 function setup() {
@@ -7,12 +7,13 @@ function setup() {
     strokeWeight(4);
 
     gravity = createVector(0, 0.2);
-    firework = new Particle(random(windowWidth), random(windowHeight));
+    fireworks.push(new Firework());
 }
 
 function draw() {
     background(50);
-    firework.applyForce(gravity);
-    firework.update();
-    firework.show();
+    for (var i=0; i<fireworks.length;i++){
+      fireworks[i].update();
+      fireworks[i].show();
+    }
 }
