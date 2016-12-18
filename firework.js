@@ -17,7 +17,7 @@ function Firework() {
         }
     }
 
-    this.explode() {
+    this.explode = function() {
         for (var i = 0; i < 100; i++) {
             var fragment = new Particle(this.pos.x, this.pos.y);
             this.fragments.push(fragment);
