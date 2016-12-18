@@ -8,7 +8,7 @@ function Firework() {
         if (!this.exploded) {
             this.particle.applyForce(gravity);
             this.particle.update();
-
+}
             if (this.particle.vel.y >= 0) {
                 this.exploded = true;
                 this.explode();
@@ -19,7 +19,6 @@ function Firework() {
                 this.fragments[i].update();
             }
 
-        }
     }
 
     this.explode = function() {
