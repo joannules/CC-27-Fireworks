@@ -1,4 +1,4 @@
-var fireworks  = [];
+var fireworks = [];
 var gravity;
 
 function setup() {
@@ -12,8 +12,11 @@ function setup() {
 
 function draw() {
     background(50);
-    for (var i=0; i<fireworks.length;i++){
-      fireworks[i].update();
-      fireworks[i].show();
+    if (random(1) < 0.1) {
+        fireworks.push(new Firework());
+    }
+    for (var i = 0; i < fireworks.length; i++) {
+        fireworks[i].update();
+        fireworks[i].show();
     }
 }
