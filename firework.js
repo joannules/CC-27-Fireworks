@@ -14,6 +14,11 @@ function Firework() {
                 this.explode();
             }
 
+            for (var i = 0; i < this.fragments.length; i++) {
+                this.fragments[i].applyForce(gravity);
+                this.fragments[i].update();
+            }
+
         }
     }
 
